@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi Primer Layout</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<header class="contenedor">
-		<img class="logo" src="img/logo.png">
-		<nav>        
-			<ul>
-				<li class="inicio"><a href="#">Inicio</a></li>
-				<li class="inicio"><a href="#about">Sobre Nosotras</a></li>
-				<li class="inicio"><a href="#nuestrascoders">Nuestras Coders</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="about">
-		<img class="grupal" src="img/grupal.jpg">
-		<hr class="line">
-		<p class="pabout">Laboratoria existe para encontrar jóvenes mujeres con potencial pero sin acceso a educación superior de calidad, y transformarlas en talentosas desarrolladoras web, que sirven clientes locales e internacionales con soluciones digitales de excelente calida</p>
-		<hr class="line">
-		<h2>Nuestras coders</h2>
-		<hr>
-			<section id="nuestrascoders">
-			<div class="contenedor1">
-				<a href="coder-detail.html">
-					<div class="profile1 boxsize">
-						<p class="nombre">Nombre y Apellido</p>
-					</div>
-				</a>
-				<a href="coder-detail.html">
-					<div class="profile2 boxsize">
-						<p class="nombre">Nombre y Apellido</p>
-					</div>
-				</a>
-				<a href="coder-detail.html">
-					<div class="profile3 boxsize">
-						<p class="nombre">Nombre y Apellido</p>
-					</div>
-				</a>
-			<div class="contenedor2">
-				<a href="coder-detail.hmtl">
-					<div class="profile4 boxsize">
-						<p class="nombre">Nombre y Apellido</p>
-					</div>
-				</a>
-				<a href="coder-detail.html">
-					<div class="profile5 boxsize">
-						<p class="nombre">Nombre y Apellido</p>
-					</div>
-				</a>
-				<a href="coder-detail.html">
-					<div class="profile6 boxsize">
-						<p class="nombre">Nombre y Apellido</p>
-					</div>
-				</a>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Mi Primer Layout</title>
+	  <link rel="stylesheet" type="text/css" href="css/grid-system.css">
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<header class="container">
+			<div class="row">
+				<div class="col-12">
+					<img  src="img/logo.png">
+				</div>
 			</div>
-			</section>
+			<nav class="row">
+				<div class="col-12">
+					<ul>
+						<li class="bordes"><a href="#nowhere" title="inicio">Inicio</a></li>
+          	<li class="bordes"><a href="#nowhere" title="Sobre Nosotros">Sobre Nosotros</a></li>
+				    <li class="bordes"><a href="#nowhere" title="Nuestras Coders">Nuestras Coders</a></li>
+				    <li class="borderless"><a href="#nowhere" title="Contacto">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section class="container">
+			<div class="row grupal">
+				<div class="col-12">
+					<img src="img/grupal.jpg">
+				</div>
 			</div>
-	</section>
-</body>
+		</section>
+		<section class="row">
+			<div class="col-12">
+				<hr class="line">
+			</div>			
+		</section>
+		<section class="row">
+			<div class="col-12">
+				<p class="about">Laboratoria existe para encontrar jóvenes mujeres con potencial pero sin acceso a educación superior de calidad, y transformarlas en talentosas desarrolladoras web, que sirven clientes locales e internacionales con soluciones digitales de excelente calidad</p>
+			</div>			
+		</section>
+		<section class="row">
+			<div class="col-12">
+				<hr class="line">
+			</div>			
+		</section>
+		<section class="container">
+			<div class="row  grupal">
+				<div class="col-12">
+					<h2>Nuestras coders</h2>
+					<div class="col-12">
+						<hr class="line2">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-4 foto">
+					<img src="img/profile-1.png"">
+					<a href="coder-detail.html" class="nombre">Nombre y Apellido</a>
+				</div>
+					<div class="col-4 foto">
+					<img src="img/profile-2.png">
+					<a href="coder-detail.html" class="nombre">Nombre y Apellido</a>
+				</div>
+					<div class="col-4 foto">
+					<img src="img/profile-3.png"">
+					<a href="coder-detail.html" class="nombre">Nombre y Apellido</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 foto">
+					<img src="img/profile-4.png"">
+					<a href="coder-detail.html" class="nombre">Nombre y Apellido</a>
+				</div>
+					<div class="col-4 foto">
+					<img src="img/profile-5.png">
+					<a href="coder-detail.html" class="nombre">Nombre y Apellido</a>
+				</div>
+					<div class="col-4 foto">
+					<img src="img/profile-6.png"">
+					<a href="coder-detail.html" class="nombre">Nombre y Apellido</a>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
